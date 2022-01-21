@@ -1,27 +1,22 @@
 const router = require('express').Router()
+const places = require('../models/places.js')
 
 router.get('/new',(req,res)=> {
     res.render('places/new')
 })
+
 router.post('/', (req, res) => {
     console.log(req.body)
-    res.send('POST /places');
+    if ( !req.body.pic) {
+        //default image if one isn't provided
+        req.body.pic = 'http://placekitten.com/400/400'
+    }
+    places.push(req.body)
+    res.redirect('/places');
   })
 
 router.get('/',(req,res)=> {
-    let places = [{
-        name:'H-Thai-ML',
-        city:'Seattle',
-        state:'WA',
-        cuisine:'Thai, Pan-Asian',
-        pic: 'https://images.huffingtonpost.com/2016-04-04-1459778795-3582863-padthai921884_960_720.jpg'
-    }, {
-        name:'Coding Cat Cafe',
-        city:'Phoenix',
-        state:'AZ',
-        cuisine:'Coffee, Bakery',
-        pic: 'https://static.boredpanda.com/blog/wp-content/uploads/2015/03/I-create-adorable-cat-sweets9__605.jpg'
-    }]
+   
     res.render('places/index', {places})
 })
 
