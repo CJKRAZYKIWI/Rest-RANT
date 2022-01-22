@@ -45,7 +45,7 @@ router.delete('/:id', (req, res) => {
     }
     else {
         places.splice(id, 1)
-        res.redirect('/places')
+        res.send('/places')
     }
 })
 
