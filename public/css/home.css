@@ -1,0 +1,33 @@
+.slide{
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.one{
+    background-color: brown;
+}
+.two{
+    background-color: rgb(50, 0, 131);
+}
+.three{
+    background-color: rgb(5, 139, 0);
+}
+
+.outer-wrapper{
+    width:100vh;
+    height:100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin:top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+
+}
