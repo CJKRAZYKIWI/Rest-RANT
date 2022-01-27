@@ -13,7 +13,9 @@ function home () {
             <body>
               <div className ="outer-wrapper"></div>
                 <div className ="wrapper"></div>
-                    <div className = "one"></div>
+                    <div className = "one">
+                        <h1>hi</h1>
+                    </div>
                     <div className = "two"></div>
                     <div className = "three"></div>
             </body>
