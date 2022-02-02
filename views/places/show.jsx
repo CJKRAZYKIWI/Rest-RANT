@@ -12,7 +12,7 @@ function show (data) {
           <div className="col-sm-6">
             <img src={data.place.pic} alt={data.place.name} />
             <h3>
-              Located in {data.place.city}, {data.place.state}
+              Located in {data.place.Location}
             </h3>
           </div>
           <div className="col-sm-6">
