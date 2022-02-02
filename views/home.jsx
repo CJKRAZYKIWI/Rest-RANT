@@ -1,5 +1,12 @@
-const React = require ('react')
-const Def = require( './default')
+const React = require ('react');
+const Def = require( './default');
+import {
+    MDBCarousel,
+    MDBCarouselInner,
+    MDBCarouselItem,
+    MDBCarouselElement,
+    MDBCarouselCaption,
+  } from 'mdb-react-ui-kit';
 
 function home () {
     return (
@@ -7,19 +14,40 @@ function home () {
             <head>
                 <meta name ="viewport" content= "width=device-width, initial-scale = 1.0"></meta>
                 <title> Home Page</title>
-                <link rel = "stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
                 <link rel = "stylesheet" href = "/css/home.css" />
             </head>
             <body>
-              <div className ="outer-wrapper"></div>
-                <div className ="wrapper"></div>
-                    <div className = "one">
-                        <h1>hi</h1>
-                    </div>
-                    <div className = "two"></div>
-                    <div className = "three"></div>
+            <MDBCarousel showIndicators showControls fade>
+      <MDBCarouselInner>
+        <MDBCarouselItem className='active'>
+          <MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp' alt='...' />
+          <MDBCarouselCaption>
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+
+        <MDBCarouselItem>
+          <MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).webp' alt='...' />
+          <MDBCarouselCaption>
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+
+        <MDBCarouselItem>
+          <MDBCarouselElement src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).webp' alt='...' />
+          <MDBCarouselCaption>
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+      </MDBCarouselInner>
+    </MDBCarousel>
+
             </body>
         </html>
 
     )}
+
 module.exports = home
