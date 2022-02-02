@@ -5,7 +5,8 @@ const placeSchema = new mongoose.Schema({
   pic: {type: String, default: 'http://placekitten/com/350/350'  },
   cuisines: {type: String, required: true },
   Location: {type: String, required: true },
-  founded: {type: Number, min:[1673,'Thats old...put 1637'],max:[new Date().getFullYear(), 'Hey this year did not come up yet']}
+  founded: {type: Number, min:[1673,'Thats old...put 1637'],max:[new Date().getFullYear(), 'Hey this year did not come up yet']},
+  comments: [{type: mongoose.Schema.Types.ObjectId, ref: 'Comment'}]
 
 })
 
