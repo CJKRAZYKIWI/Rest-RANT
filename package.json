@@ -24,11 +24,13 @@
     "dotenv": "^11.0.0",
     "express": "^4.17.2",
     "express-react-views": "^0.11.0",
-    "mdb-ui-kit": "^3.10.2",
+    "leaflet": "^1.7.1",
+    "mdb-react-ui-kit": "^2.3.0",
     "method-override": "^3.0.0",
     "mongoose": "^6.1.8",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
+    "react-dom": "^17.0.2",
     "react-popper": "^2.2.5"
   }
 }

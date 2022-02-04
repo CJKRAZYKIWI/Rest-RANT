@@ -103,7 +103,13 @@ function show (data) {
               </div>
               <input type="submit" className="btn btn-primary" value="Add Comment" />
             </form>
+            <div id="map"></div>
+            
+
+
+
       </main>
+
     </Def>
     )
 }
