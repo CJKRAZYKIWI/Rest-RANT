@@ -7,7 +7,8 @@ import {
   MDBNavbarLink,
   MDBNavbarToggler,
   MDBContainer,
-  MDBIcon
+  MDBIcon,
+  MDBCardText
 } from 'mdb-react-ui-kit';
 import Image from 'react-bootstrap/Image'
 import { MDBRipple } from 'mdb-react-ui-kit';
@@ -63,15 +64,13 @@ function home () {
         </MDBContainer>
       </MDBNavbar>
       </header>
-      <div
-        className='p-5 text-center bg-image'
-      >
-        <div className='mask' style={{ backgroundImage: "url('https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80')", height:1800, width:2000, }}>
-          <div className='d-flex justify-content-left align-items-center h-100'>
+      <div className='ramenC'>
+        <div className='Ramenpic'style={{ backgroundImage: "url('https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80')"}}>
+          <div className='ramenstuff'>
             <div className='text-white'>
               <h1 className='mb-3 '>Please Ramen Calm...</h1>
               <h4 className='mb-3'>Push button below if your signficant other is HANGRY</h4>
-              <a className='btn btn-outline-light btn-lg' href="/places" role='button'>
+              <a className='mb-3 btn btn-outline-light btn-lg' href="/places" role='button'>
                 Find Place
               </a>
             </div>
@@ -83,7 +82,7 @@ function home () {
         className='p-8 text-center bg-image'
       >
         <div className='mask1' style={{ backgroundImage: "url('https://images.unsplash.com/flagged/photo-1621757458931-a1b076e5a8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80')", height:700,}}>
-          <div className='d-flex justify-content-center align-items-center h-100'>
+          <div className='donutstuff'>
             <div className='text-white1'>
               <h1 className='mb-3t '>If you donut mind...</h1>
               <h4 className='mb-3t'>add a new restaurant!</h4>

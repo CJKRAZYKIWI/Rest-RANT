@@ -1,8 +1,24 @@
-.p-5{
+.ramenC{
+    overflow:hidden; 
+    max-height:100%;
+    display:absolute;
+    padding-bottom: 1000px;
     background-image: linear-gradient(180deg,#c88f42, #f3d396);
-    overflow:hidden;
-}
 
+}
+.Ramenpic{
+ position:absolute;
+ background-position:center;
+ background-size:33.33% auto;
+ top:0;bottom:0;left:0;right:0;
+ overflow:hidden;
+}
+.ramenstuff{
+  display:flex;
+  float:left;
+  margin-left:550px;
+  margin-top:320px;
+}
 h1 .mb-3{
     font-size: 80px;
     font-family: 'Fjalla One', sans-serif;
@@ -13,6 +29,8 @@ h1 .mb-3{
     animation-duration: 5s;
     animation-name: roll;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+
 
 }
 @keyframes roll {
@@ -29,3 +47,10 @@ h1 .mb-3{
 h4 .mb-3{
     font-size: 50px;
     font-family: 'Fjalla One', sans-serif;}
+
+.donutstuff{
+  display:flex;
+  float:right;
+  margin-right:550px;
+  margin-top:320px;
+}
