@@ -41,7 +41,7 @@ background-repeat: repeat;
   user-select: none;
   background-color: transparent;
   border: 2px solid #b0a188;
-  padding: 2.5rem 43rem;
+  padding: 2.5rem 20rem;
   font-size: 4rem;
   border-radius: 10rem;
   transition: color 1s ease-in-out,background-color 2s ease-in-out,border-color .5s ease-in-out,box-shadow .5s ease-in-out;
@@ -52,7 +52,7 @@ background-repeat: repeat;
 .btn:hover{
   background-color: #814a00;
   color:#e2c577 ;
-  border-color: #aca89f;
+  border-color: white;
   box-shadow: red;
 
 }
@@ -74,31 +74,51 @@ background-repeat: repeat;
     background-repeat: repeat;
       position:static;
      background-position:center;
-     background-size:33.33% auto;
+     background-size:100% auto;
      top:0;bottom:0;left:0;right:0;
      overflow:hidden;
      height: 100vh;
     }
 
     .donutstuff{
-      display:flex;
-      float:left;
-      margin-left:550px;
-      margin-top:320px;
+      font-family: 'Yellowtail', cursive;
+      text-shadow: 1px 1px 2px #f10932, 0 0 25px #018f99, 0 0 5px black;
+      color:#c0aab4 ;
+      text-align: center;
+      animation-duration: 10s;
+      animation-name: roll2;
     }
-    .mb-3t{
-      animation-duration: 5s;
-    animation-name: roll;
-    text-shadow: 10px 1px 2px rgb(247, 247, 247), 0 20px 25px rgb(255, 234, 49), 0 0 5px rgb(255, 255, 255);
-    }
-    @keyframes roll {
+    @keyframes roll2 {
       from {
-        margin-left: 100%;
-        width: 300%;
+        margin-top: 100%;
+        height: 300%;
       }
     
       to {
-        margin-left: 0%;
-        width: 100%;
+        margin-top: 0%;
+        height: 100%;
       }
     }
+    .donutp1{
+      font-size: 8rem;
+    }
+    .donutp2{
+      font-size: 8rem;
+    }
+    .donutp3{
+      font-size: 8rem;
+    }
+    .donutp4{
+      font-size: 8rem;
+    }
+    .donutp5{
+      font-size: 8rem;
+    }
+    .Donutpic a {
+      color: #1b64eb;
+      text-decoration: underline;
+      font-size: 8rem;
+  }
+  .Donutpic a:hover{
+    color:#c4ab82;
+  }
