@@ -1,38 +1,62 @@
-.ramenC{
-    overflow:hidden; 
-    max-height:100%;
-    display:absolute;
-    padding-bottom: 1000px;
-    background-image: linear-gradient(180deg,#c88f42, #f3d396);
 
-}
+
 .Ramenpic{
- position:absolute;
+  background-image: url('https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80');
+background-repeat: repeat;
+  position:static;
  background-position:center;
  background-size:33.33% auto;
  top:0;bottom:0;left:0;right:0;
  overflow:hidden;
+ height: 100vh;
 }
 .ramenstuff{
   display:flex;
-  float:left;
-  margin-left:550px;
+  margin-left:55px;
   margin-top:320px;
-}
-h1 .mb-3{
-    font-size: 80px;
-    font-family: 'Fjalla One', sans-serif;
-   
-    
 }
 .mb-3{
     animation-duration: 5s;
     animation-name: roll;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    
-
+    text-shadow: 1px 1px 2px black, 0 0 25px #834c01, 0 0 5px black;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 7rem;
+    text-align: center;
+}
+.btn-group-lg>.btn, .btn-lg {
+  padding: 0.5rem 15rem;
+  border-radius: 6rem;
+}
+.btn {
+  display: inline-block;
+  font-weight: 800;
+  line-height: 1.5;
+  color: #7d8103;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid #b0a188;
+  padding: 2.5rem 43rem;
+  font-size: 4rem;
+  border-radius: 10rem;
+  transition: color 1s ease-in-out,background-color 2s ease-in-out,border-color .5s ease-in-out,box-shadow .5s ease-in-out;
+  font-family: 'Festive', cursive;
+  letter-spacing: .5em;
 
 }
+.btn:hover{
+  background-color: #814a00;
+  color:#e2c577 ;
+  border-color: #aca89f;
+  box-shadow: red;
+
+}
+
 @keyframes roll {
     from {
       margin-left: 100%;
@@ -44,13 +68,37 @@ h1 .mb-3{
       width: 100%;
     }
   }
-h4 .mb-3{
-    font-size: 50px;
-    font-family: 'Fjalla One', sans-serif;}
 
-.donutstuff{
-  display:flex;
-  float:right;
-  margin-right:550px;
-  margin-top:320px;
-}
+    .Donutpic{
+      background-image: url('https://images.unsplash.com/flagged/photo-1621757458931-a1b076e5a8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');
+    background-repeat: repeat;
+      position:static;
+     background-position:center;
+     background-size:33.33% auto;
+     top:0;bottom:0;left:0;right:0;
+     overflow:hidden;
+     height: 100vh;
+    }
+
+    .donutstuff{
+      display:flex;
+      float:left;
+      margin-left:550px;
+      margin-top:320px;
+    }
+    .mb-3t{
+      animation-duration: 5s;
+    animation-name: roll;
+    text-shadow: 10px 1px 2px rgb(247, 247, 247), 0 20px 25px rgb(255, 234, 49), 0 0 5px rgb(255, 255, 255);
+    }
+    @keyframes roll {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
