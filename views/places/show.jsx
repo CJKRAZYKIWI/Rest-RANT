@@ -2,6 +2,7 @@ const React = require('react')
 const methodOverride = require ('method-override')
 const Def = require('../default')
 
+
 //this is designing the show page
 
 function show (data) {
@@ -103,8 +104,8 @@ function show (data) {
               </div>
               <input type="submit" className="btn btn-primary" value="Add Comment" />
             </form>
-            <div id="map"></div>
             
+
 
 
 

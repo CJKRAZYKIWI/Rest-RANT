@@ -23,7 +23,7 @@ function index (data) {
     return(
     <Def>
         <main>
-            <h1> Index page gratata</h1>
+            <h1> What are we eating?</h1>
             {placesFormatted}
         </main>
     </Def>

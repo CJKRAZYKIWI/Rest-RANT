@@ -3,7 +3,7 @@ const Def = require('../default')
 
 //CSSstyle this when blueprint is done
 function new_form (data) {
-    let message = 'error'
+    let message = ''
     if (data.message) {
         message = (
             <h4 className= "alert-danger">
@@ -15,7 +15,8 @@ function new_form (data) {
     return (
         <Def>
             <main>
-                <h1> Add a New Place </h1>
+                <h1> Share a new place to eat </h1>
+                <h1>test div</h1>
                 {message}
                 <form method = "POST" action= "/places">
                     <div className = "form-group">
